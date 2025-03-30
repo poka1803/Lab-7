@@ -4,6 +4,7 @@ import requests
 from PIL import Image, ImageTk
 from io import BytesIO
 
+
 def load_fox_image():
     response = requests.get("https://randomfox.ca/floof/")
     if response.status_code == 200:

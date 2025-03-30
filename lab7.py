@@ -1,6 +1,7 @@
 #1задание
 import  requests
 
+
 API_KEY ="8782d0149f22765a2c7496369ff085d4"
 CITY = "Saint Petersburg"
 URL = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
@@ -23,8 +24,11 @@ if response.status_code == 200:
     print(f"Скорость ветра: {wind_speed} м/с")
 else:
     print(f"Ошибка: {response.status_code}")
+
+
 #2задание
 import requests
+
 
 url = "https://rickandmortyapi.com/api/character"
 
